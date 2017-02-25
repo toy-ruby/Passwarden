@@ -16,5 +16,19 @@ namespace Passwarden
         {
             InitializeComponent();
         }
+
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+            // Random password generation takes place here
+            RandomString rString = new RandomString();
+            string val = rString.getString(25);
+            passwordTextBox.Text = val;
+        }
+
+        private void copyButton_Click(object sender, EventArgs e)
+        {
+            // Copy test from text box to clipboard
+            Clipboard.SetText(passwordTextBox.Text);
+        }
     }
 }
