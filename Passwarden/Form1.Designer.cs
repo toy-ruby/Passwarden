@@ -76,6 +76,7 @@
             this.caseSensitiveCheckBox.TabIndex = 3;
             this.caseSensitiveCheckBox.Text = "Aa - Zz";
             this.caseSensitiveCheckBox.UseVisualStyleBackColor = true;
+            this.caseSensitiveCheckBox.CheckedChanged += new System.EventHandler(this.caseSensitiveCheckBox_CheckedChanged);
             // 
             // nonsensitiveCheckBox
             // 
@@ -86,6 +87,7 @@
             this.nonsensitiveCheckBox.TabIndex = 3;
             this.nonsensitiveCheckBox.Text = "a - z";
             this.nonsensitiveCheckBox.UseVisualStyleBackColor = true;
+            this.nonsensitiveCheckBox.CheckedChanged += new System.EventHandler(this.nonsensitiveCheckBox_CheckedChanged);
             // 
             // checkBox3
             // 

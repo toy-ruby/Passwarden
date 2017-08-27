@@ -40,5 +40,15 @@ namespace Passwarden
             // Copy test from text box to clipboard
             Clipboard.SetText(passwordTextBox.Text);
         }
+
+        private void caseSensitiveCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.caseSensitiveCheckBox.Checked) this.nonsensitiveCheckBox.Checked = false;
+        }
+
+        private void nonsensitiveCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.nonsensitiveCheckBox.Checked) this.caseSensitiveCheckBox.Checked = false;
+        }
     }
 }

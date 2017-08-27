@@ -75,7 +75,8 @@ namespace Passwarden
             for (int i = 0; i < len; i++)
             {
                 int code = Convert.ToInt16(100 * rnd.NextDouble());
-                code = rangeCheck(code, 97, 122);
+                code = closetToCharset(code);
+                //code = rangeCheck(code, 97, 122);
                 ret += Convert.ToChar(code);
             }
 
@@ -123,6 +124,21 @@ namespace Passwarden
             //        ok = true;
             //    }
             //}
+
+            return num;
+        }
+
+        /// <summary>
+        /// Returns the value of the nearest int to num within the given ranges of charSet
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        private int closetToCharset(int num)
+        {
+            for(int i = 0; i < charSet.Length / charSet.Rank; i++)
+            {
+                // TODO
+            }
 
             return num;
         }
