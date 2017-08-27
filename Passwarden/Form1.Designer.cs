@@ -32,11 +32,11 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.copyButton = new System.Windows.Forms.Button();
             this.generateButton = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.caseSensitiveCheckBox = new System.Windows.Forms.CheckBox();
+            this.nonsensitiveCheckBox = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.numericCheckBox = new System.Windows.Forms.CheckBox();
+            this.punctuationCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // passwordTextBox
@@ -67,25 +67,25 @@
             this.generateButton.UseVisualStyleBackColor = true;
             this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
             // 
-            // checkBox1
+            // caseSensitiveCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 43);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Aa - Zz";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.caseSensitiveCheckBox.AutoSize = true;
+            this.caseSensitiveCheckBox.Location = new System.Drawing.Point(12, 43);
+            this.caseSensitiveCheckBox.Name = "caseSensitiveCheckBox";
+            this.caseSensitiveCheckBox.Size = new System.Drawing.Size(60, 17);
+            this.caseSensitiveCheckBox.TabIndex = 3;
+            this.caseSensitiveCheckBox.Text = "Aa - Zz";
+            this.caseSensitiveCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // nonsensitiveCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(12, 66);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "a - z";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.nonsensitiveCheckBox.AutoSize = true;
+            this.nonsensitiveCheckBox.Location = new System.Drawing.Point(12, 66);
+            this.nonsensitiveCheckBox.Name = "nonsensitiveCheckBox";
+            this.nonsensitiveCheckBox.Size = new System.Drawing.Size(46, 17);
+            this.nonsensitiveCheckBox.TabIndex = 3;
+            this.nonsensitiveCheckBox.Text = "a - z";
+            this.nonsensitiveCheckBox.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
@@ -97,36 +97,36 @@
             this.checkBox3.Text = "Aa-Zz";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // numericCheckBox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 89);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(47, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "0 - 9";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.numericCheckBox.AutoSize = true;
+            this.numericCheckBox.Location = new System.Drawing.Point(12, 89);
+            this.numericCheckBox.Name = "numericCheckBox";
+            this.numericCheckBox.Size = new System.Drawing.Size(47, 17);
+            this.numericCheckBox.TabIndex = 3;
+            this.numericCheckBox.Text = "0 - 9";
+            this.numericCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // punctuationCheckBox
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(12, 112);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(87, 17);
-            this.checkBox5.TabIndex = 3;
-            this.checkBox5.Text = "!\"#$%&\'()*+,-./";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.punctuationCheckBox.AutoSize = true;
+            this.punctuationCheckBox.Location = new System.Drawing.Point(12, 112);
+            this.punctuationCheckBox.Name = "punctuationCheckBox";
+            this.punctuationCheckBox.Size = new System.Drawing.Size(87, 17);
+            this.punctuationCheckBox.TabIndex = 3;
+            this.punctuationCheckBox.Text = "!\"#$%&\'()*+,-./";
+            this.punctuationCheckBox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 261);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.punctuationCheckBox);
+            this.Controls.Add(this.numericCheckBox);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.nonsensitiveCheckBox);
+            this.Controls.Add(this.caseSensitiveCheckBox);
             this.Controls.Add(this.generateButton);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.passwordTextBox);
@@ -142,11 +142,11 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Button copyButton;
         private System.Windows.Forms.Button generateButton;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox caseSensitiveCheckBox;
+        private System.Windows.Forms.CheckBox nonsensitiveCheckBox;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox numericCheckBox;
+        private System.Windows.Forms.CheckBox punctuationCheckBox;
     }
 }
 

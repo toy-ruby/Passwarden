@@ -23,6 +23,16 @@ namespace Passwarden
             RandomString rString = new RandomString();
             string val = rString.getString(25);
             passwordTextBox.Text = val;
+
+            Options options = new Passwarden.Options(
+                caseSensitiveCheckBox.Checked,
+                nonsensitiveCheckBox.Checked,
+                numericCheckBox.Checked,
+                punctuationCheckBox.Checked
+            );
+
+            RandomString rString2 = new RandomString(options);
+            //rString2.
         }
 
         private void copyButton_Click(object sender, EventArgs e)
